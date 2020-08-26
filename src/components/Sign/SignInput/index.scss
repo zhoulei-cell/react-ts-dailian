@@ -1,0 +1,21 @@
+.input-wrap{
+  padding: 28px 30px;
+  border-bottom: 1px solid #CACACA;
+  .input-img{
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;
+  }
+  .input{
+    outline: none;
+    border: none;
+    font-size: 26px;
+    &::placeholder{
+      color: #CACACA;
+    }
+  }
+  .code{
+    color: #CACACA;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,16 @@
+
+.tab-bar{
+  height: 78px;
+  border-bottom: 3px solid #9A9A9A;
+  .tab-item{
+    height: 78px;
+    color: #9A9A9A;
+    font-size: 30px;
+    text-align: center;
+    line-height: 78px;
+    &.active{
+      color: #00CB82;
+      border-bottom: 3px solid #00CB82;
+    }
+  }
+}

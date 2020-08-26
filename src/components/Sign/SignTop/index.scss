@@ -1,0 +1,33 @@
+.sign-top{
+  position: relative;
+  height: 450px;
+  .sign-bg{
+    position: absolute;
+    left: -300px;
+    top: 0;
+    width: 1350px;
+    height: 450px;
+    border-radius: 0 0 50% 50%;
+    background-image: url(../../../assets/images/sign/01.jpg);
+    background-size: 800px 450px;
+    background-position: 255px 0px;
+    // .filter{
+    // 	width: 100%;
+    // 	height: 100%;
+    // 	background-color: #00cb82;
+    // 	filter: blur(160rpx);
+    // }
+  }
+  .photo{
+    position: absolute;
+    left: 50%;
+    bottom: -84px;
+    width: 168px;
+    height: 168px;
+    margin-left: -84px;
+    border-radius: 50%;
+    background-image: url(../../../assets/images/sign/timg.jpg);
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+}

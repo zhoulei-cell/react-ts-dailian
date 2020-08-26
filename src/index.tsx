@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import 'normalize.css'
+import './assets/scss/base.scss'
+import rem from './utils/rem'
+import routes, { IRoutes } from './routes'
+import { HashRouter as Router, Route } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 
+rem.init()
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    {
+      routes.map((route: IRoutes, index: number) => (
+        <Route {...route} key={index}></Route>
+      ))
+    }
+  </Router>,
   document.getElementById('root')
 );
 

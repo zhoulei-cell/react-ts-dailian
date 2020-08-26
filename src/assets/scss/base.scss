@@ -1,0 +1,74 @@
+@import './reset.scss';
+
+//flex布局
+.d-flex{
+	display: flex;
+}
+
+//弹性盒子元素在主轴（横轴）方向上的对齐方式。
+$justify-content: (
+	start: flex-start,
+	center: center,
+	between: space-between,
+	around: space-around,
+	end: flex-end
+);
+@each $key, $value in $justify-content {
+	.jc-#{$key}{
+		justify-content: $value;
+	}
+}
+
+//flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式
+$align-items: (
+	stretch: stretch,
+	center: center,
+	start: flex-start,
+	end: flex-end
+);
+@each $key, $value in $align-items {
+	.ai-#{$key}{
+		align-items: $value;
+	}
+}
+
+// 元素的排列方向
+$flex-direction: (
+	row,
+	column
+);
+@each $value in $flex-direction {
+	.fd-#{$value}{
+		flex-direction: $value;
+	}
+}
+
+.flex-1{
+	flex: 1;
+}
+
+//属性用于设置或检索弹性盒子的扩展比率
+.flex-grow-1{
+	flex-grow: 1;
+}
+
+.flex-shrink-0{
+	flex-shrink: 0;
+}
+
+.of-h{
+	overflow: hidden;
+}
+
+.text-overflow{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// 定义文本居中方式
+@each $var in (left, center, right) {
+	.ta-#{$var} {
+		text-align: $var;
+	}
+}
