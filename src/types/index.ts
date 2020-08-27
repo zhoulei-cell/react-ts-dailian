@@ -1,0 +1,2 @@
+
+export type voidFuction = () => void;

@@ -8,15 +8,16 @@ export interface IProps{
   code?: boolean;
   codeText?: string;
   change: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  changeCode?: VoidFunction;
 }
 
 const SignInput: React.FC<IProps> = (props: IProps) => {
-  const { icon, placeholder, type, code, codeText, change } = props
+  const { icon, placeholder, type, code, codeText, change, changeCode } = props
   return (
     <div className="input-wrap d-flex ai-center">
       <img className="input-img" src={icon} alt="icon"/>
       <input className="input flex-1" type={type} placeholder={placeholder} onChange={(e) => change(e)}/>
-      { code && <div className="code">{codeText}</div> }
+      { code && <div className="code" onClick={changeCode}>{codeText}</div> }
     </div>
   )
 }

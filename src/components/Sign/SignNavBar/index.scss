@@ -1,0 +1,19 @@
+
+.sign-nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  // background-color: rgba(255, 255, 255, .3);
+  z-index: 1;
+  .left{
+    width: 110px;
+    padding: 0 20px;
+    height: 88px;
+    img{
+      width: 17px; 
+      height: 30px;
+    }
+  }
+}
