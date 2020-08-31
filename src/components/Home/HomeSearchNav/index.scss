@@ -1,0 +1,61 @@
+
+h3{
+  margin: 0;
+}
+.top{
+  padding: 12px 0;
+  .title{
+    padding: 0 15px;
+    color: #000;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  .input-wrapper{
+    .cancel{
+      padding: 0 10px;
+      font-size: 24px;
+    }
+  }
+  .input-box, .box{
+    padding: 6px 0;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #777;
+    background-color: #fff;
+    .iconfont{
+      padding: 0 10px;
+      font-size: 28px;
+      line-height: 28px;
+      &.gray{
+        color: #777;
+      }
+    }
+    span{
+      color: #777;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    .search{
+      height: 100%;
+      input{
+        height: 100%;
+        border: none;
+        outline: none;
+        padding: 0;
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+  .time{
+    width: 35px;
+    height: 35px;
+    margin: 0 15px;
+    background-image: url(../../../assets/images/home/other/clender.png);
+    background-size: 100% 100%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 35px;
+  }
+}

@@ -1,0 +1,49 @@
+
+.order-card-wrap{
+  padding: 20px 20px 0;
+  .order-card{
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 3px 10px #999;
+    border-radius: 15px;
+    background-color: #fff;
+    .same{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 66px;
+      height: 66px;
+    }
+    .card-image{
+      img{
+        display: block;
+        width: 120px;
+        height: 120px;
+      }
+    }
+    .card-content{
+      padding-left: 15px;
+      .title{
+        color: #00CB82;
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 45px;
+      }
+      .author{
+        font-size: 19px;
+        line-height: 32px;
+      }
+      .bail{
+        font-size: 21px;
+        line-height: 36px;
+      }
+    }
+    .card-money{
+      width: 140px;
+      color: #f00;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

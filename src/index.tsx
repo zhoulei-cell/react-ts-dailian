@@ -4,7 +4,7 @@ import 'normalize.css'
 import './assets/scss/base.scss'
 import rem from './utils/rem'
 import routes, { IRoutes } from './routes'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 
 rem.init()
@@ -17,6 +17,7 @@ ReactDOM.render(
           <Route {...route} key={index}></Route>
         ))
       }
+      <Redirect to="/signIn"/>
     </Switch>
   </Router>,
   document.getElementById('root')
