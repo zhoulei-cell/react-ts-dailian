@@ -38,6 +38,10 @@ const init: () => void = function (): void {
   resize(htmlEl, bodyEl)
   event(resize, htmlEl, bodyEl)
 }
+
+export const px2rem: (px: number) => string = function (px: number): string {
+  return (px / 750 * 10) + "rem"
+}
 export default {
   init
 }

@@ -1,0 +1,49 @@
+.filter-selector-wrap{
+  .filter-selector{
+    color: #555;
+    padding: 0 20px 30px;
+    .filter-selector-group{
+      .title{
+        height: 68px;
+        font-size: 26px;
+        font-weight: normal;
+        line-height: 68px;
+      }
+      .filter-selector-list{
+        .filter-selector-item{
+          width: 31.33%;
+          height: 60px;
+          margin-bottom: 10px;
+          margin-right: 2%;
+          background-color: #f4f8fb;
+          color: #777;
+          font-size: 23px;
+          text-align: center;
+          line-height: 30px;
+          &.select{
+            // color: #409eff;
+            // background-color: #edf5ff;
+            color: #fff;
+            // background-color: #4cd96f;
+            background-color: #00CB82;
+          }
+        }
+      }
+    }
+  }
+  .btn-group{
+    height: 88px;
+    box-shadow: 0 -2px 2px 0 #ededed;
+    font-size: 26px;
+    font-weight: bold;
+    .cancel{
+      color: #999;
+      background-color: #fff;
+    }
+    .confirm{
+      color: #fff;
+      background-color: #4cd96f;
+      background-color: #00CB82;
+    }
+  }
+}

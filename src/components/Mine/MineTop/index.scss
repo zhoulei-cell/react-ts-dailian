@@ -1,0 +1,75 @@
+
+.mine-top{
+  height: 265px;
+  padding: 20px 50px 0;
+  background-image: url(../../../assets/images/home/user/top1.png);
+  background-size: 100%;
+  .top-box{
+    position: relative;
+    height: 100%;
+    background-image: url(../../../assets/images/home/user/top2.png);
+    background-size: 100%;
+    .vip-icon{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 160px;
+      height: 160px;
+    }
+    .top-content{
+      .photo-img{
+        padding-left: 38px;
+        padding-right: 20px;
+        img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+      .user-info{
+        color: #fff;
+        .user-title{
+          font-size: 26px;
+          font-weight: bold;
+          line-height: 38px;
+        }
+        .user-phone, .user-grade{
+          font-size: 20px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+  .resource-container{
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    padding: 0 20px;
+    width: 520px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 5px #999;
+    .resource-box{
+      .num{
+        padding-bottom: 10px;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .text{
+        color: #444;
+        font-size: 20px;
+      }
+    }
+    .account .num{
+      color: #00CB82;
+    }
+    .diamond .num{
+      color: lightcoral;
+    }
+    .coupon .num{
+      color: orange;
+    }
+  }
+}
